@@ -1,0 +1,5 @@
+zone "asir23.int." {
+        type master;
+        file "/var/lib/bind/db.asir23.int";
+        notify explicit;
+};
