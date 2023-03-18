@@ -1,31 +1,13 @@
-# Práctica DNS
+# Descripción de las opciones del archivo docker-compose.yml
 
-## Subtítulo
+El archivo docker-compose.yml contiene las *siguientes opciones de configuración* para el contenedor con la imagen oficial de bind9:
 
-`código`
+- `version`: indica la versión de la especificación de Compose que se está utilizando.
+- `services`: define los servicios que se ejecutarán dentro del contenedor.
+- `bind9`: es el nombre del servicio al que se le aplican las opciones de configuración.
+- `image`: define la imagen que se utilizará para crear el contenedor.
+- `container_name`: especifica el nombre que se le dará al contenedor.
+- `restart`: determina si el contenedor se reiniciará automáticamente en caso de que falle o se detenga.
+- `ports`: mapea los puertos del contenedor a los puertos del host. 
+- `volumes`: define los volúmenes que se utilizarán para la configuración de bind9. En este caso, se utilizan los archivos `named.conf`, `named.conf.options` y `named.conf.local`.
 
-_cursiva_
-
-### Lista no numerada  
-
-* item1
-    * item2
-* item3
-
-### Lista numerada
-
-1. Item 1
-
-2. Item 2
-
-> Esto es una cita
-
-[Esto es un link](http://google.com)
-
-``` 
-una linea de codigo
-otra 
-y otraa
-```
-
-![(Imagen)](https://static.wikia.nocookie.net/doblaje/images/7/71/Gato-con-botas.jpg/revision/latest/top-crop/width/360/height/450?cb=20120110230931&path-prefix=es)
